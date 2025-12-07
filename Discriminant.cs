@@ -1,4 +1,4 @@
-﻿namespace Discriminant_formula
+namespace Discriminant_formula
 
 {
     internal class Program
@@ -8,13 +8,13 @@
             Discriminant d1 = new Discriminant();
 
             Console.Write("Enter value for A: ");
-            d1.A = int.Parse(Console.ReadLine());
+            d1.A = double.Parse(Console.ReadLine());
 
             Console.Write("Enter value for B: ");
-            d1.B = int.Parse(Console.ReadLine());
+            d1.B = double.Parse(Console.ReadLine());
 
             Console.Write("Enter value for C: ");
-            d1.C = int.Parse(Console.ReadLine());
+            d1.C = double.Parse(Console.ReadLine());
 
             double result = d1.FormulaDiscriminant();
 
@@ -35,8 +35,8 @@
     class Discriminant
     {
         private double _discriminant;
-        private int _a;
-        public int A
+        private double _a;
+        public double A
         {
             get { return _a; }
             set
@@ -56,15 +56,15 @@
             }
         }
 
-        private int _b;
-        public int B
+        private double _b;
+        public double B
         {
             get { return _b; }
             set { _b = value; }
         }
 
-        private int _c;
-        public int C
+        private double _c;
+        public double C
         {
             get { return _c; }
             set { _c = value; }
