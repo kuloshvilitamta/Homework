@@ -1,3 +1,4 @@
+
 namespace Discriminant_formula
 
 {
@@ -45,7 +46,7 @@ namespace Discriminant_formula
                 while (value == 0)
                 {
                     Console.WriteLine("You cannot use 0 here, please enter another number.");
-                    int newValue = int.Parse(Console.ReadLine());
+                    double newValue = int.Parse(Console.ReadLine());
 
                     if (newValue != 0)
                     {
